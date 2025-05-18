@@ -2,6 +2,7 @@ import { defineConfig } from 'vite';
 import { resolve } from 'path';
 
 export default defineConfig({
+  base: '/header-spa-beauty/',
   resolve: {
     alias: {
       // Alias principal para la carpeta src
