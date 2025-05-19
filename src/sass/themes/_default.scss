@@ -1,7 +1,7 @@
 @use '@abstracts/variables' as v;
 
-html * {
-    font-family: v.$roboto-font;
+html {
+    font-family: v.$poppins-font;
 }
  
 body {
