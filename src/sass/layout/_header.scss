@@ -1,7 +1,47 @@
+@use '@abstracts/variables' as v;
+@use '@abstracts/mixins' as mx;
+
 header {
     margin-top: 33px;
     margin-bottom: 113px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    .header__logo {
+        display: flex;
+    }
+
+    .header__aside{
+        display: flex;
+        gap: 74px;
+
+        ul {
+            @include mx.reset-list;
+            display: flex;
+            gap: 32px;
+        }
+
+        &_icons {
+            display: flex;
+            gap: 32px;
+            align-items: center;
+        }
+
+        &_login {
+            display: flex;
+            gap: 32px;
+            align-items: center;
+            
+
+            a {
+                color: v.$dark-blue;
+                font-size: 18px;
+                
+                &:last-child {
+                @include mx.button;
+                }
+            }
+        }
+    }
 }

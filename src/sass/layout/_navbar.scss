@@ -1,3 +1,24 @@
+@use '@abstracts/variables' as v;
+@use '@abstracts/mixins' as mx;
+
 nav.nav-primary {
-    
+    ul {
+        @include mx.reset-list;
+        display: flex;
+        gap: 56px;
+        align-items: center;
+
+        a {
+            text-decoration: none;
+            color: v.$dark-blue;
+            font-size: 18px;
+            
+            
+            &:last-child {
+                display: flex;
+                align-items: center;
+            }
+        }
+        
+    }
 }

@@ -25,3 +25,19 @@
     }
   }
 }
+
+@mixin reset-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin button {
+  display: inline-block;
+  background-color: v.$dark-blue;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 32px;
+  font-weight: 400;
+  text-decoration: none;
+}
