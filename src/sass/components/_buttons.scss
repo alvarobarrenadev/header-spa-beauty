@@ -1,0 +1,27 @@
+@use '@abstracts/variables' as v;
+@use '@abstracts/mixins' as mx;
+
+.btn--primary {
+    @include mx.button;
+}
+
+.btn--video-icon {
+    @include mx.btn--video-icon;
+    
+    img {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.video-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: v.$dark-blue;
+    
+    span {
+        font-weight: 400;
+    }
+}

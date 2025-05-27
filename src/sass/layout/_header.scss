@@ -35,11 +35,10 @@ header {
             
 
             a {
-                color: v.$dark-blue;
                 font-size: 18px;
                 
-                &:last-child {
-                @include mx.button;
+                &:first-child {
+                    color: v.$dark-blue;
                 }
             }
         }

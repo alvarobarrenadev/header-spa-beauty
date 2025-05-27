@@ -1,0 +1,22 @@
+@use '@abstracts/variables' as v;
+
+body {
+    background: linear-gradient(to right, v.$bg-gray 66%, v.$bg-blue 34%);
+    position: relative;
+    overflow-y: auto;
+    
+    // Establece una altura máxima para el body
+    height: auto;
+    
+    &::before {
+        content: '';
+        position: absolute;
+        height: 180px;
+        // Elimina bottom: 0px y establece top en función de la altura del contenido real
+        top: calc(100% - 90px); // Coloca el elemento justo después del contenido real
+        left: 0px;
+        right: 0px;
+        background-color: v.$white;
+        z-index: -1;
+    }
+}
