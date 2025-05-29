@@ -3,6 +3,18 @@
 
 .btn--primary {
     @include mx.button;
+    
+}
+
+.hero {
+    .btn--primary {
+        transition: all .3s ease-in-out;
+    }
+
+    .btn--primary:hover {
+        background-color: v.$bg-gray;
+        color: v.$dark-blue;
+    }
 }
 
 .btn--video-icon {
@@ -14,14 +26,21 @@
     }
 }
 
+
 .video-link {
     display: inline-flex;
     align-items: center;
     gap: 12px;
     text-decoration: none;
     color: v.$dark-blue;
+    cursor: pointer;
+    transition: transform .3s ease-in-out;
     
     span {
         font-weight: 400;
+    }
+
+    &:hover {
+        transform: scale(1.1);
     }
 }

@@ -43,4 +43,12 @@ header {
             }
         }
     }
+
+    a {
+        transition: transform .3s ease-in-out;
+    }
+
+    a:link:hover:not(.header__logo) {
+        transform: scale(1.1);
+    }
 }
